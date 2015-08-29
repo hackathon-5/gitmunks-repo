@@ -36,8 +36,7 @@ Form = {
         $.ajax({
             url:url,
             data: this.form_array,
-            type: 'POST',
-
+            type: 'POST'
         })
     },
     insert: function (field, value){
