@@ -21,36 +21,36 @@
             <div class="form-group">
                 <h1>Why would someone want to visit <span data-insert="city">City</span>?</h1>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="food" />
-                    <label>It’s foodie heaven</label>
+                    <input type="checkbox" name="why" value="food" id="food" />
+                    <label for="food">It’s foodie heaven</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="music" />
-                    <label>A vibrant music scene</label>
+                    <input type="checkbox" name="why" value="music" id="music"/>
+                    <label for="music">A vibrant music scene</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="art" />
-                    <label>The art community is thriving</label>
+                    <input type="checkbox" name="why" value="art" id="art" />
+                    <label for="art">The art community is thriving</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="shopping" />
-                    <label>The shopping is first-rate</label>
+                    <input type="checkbox" name="why" value="shopping" id="shopping"/>
+                    <label for="shopping">The shopping is first-rate</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="amusements" />
-                    <label>Thrilling amusements</label>
+                    <input type="checkbox" name="why" value="amusements" id="amusements"/>
+                    <label for="amusements">Thrilling amusements</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="history" />
-                    <label>For the history</label>
+                    <input type="checkbox" name="why" value="history" id="history"/>
+                    <label for="history">For the history</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="landscape" />
-                    <label>To landscape is beautiful</label>
+                    <input type="checkbox" name="why" value="landscape" id="landscape"/>
+                    <label for="landscape">To landscape is beautiful</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="why" value="nightlife" />
-                    <label>The nightlife is wild</label>
+                    <input type="checkbox" name="why" value="nightlife" id="nightlife"/>
+                    <label for="nightlife">The nightlife is wild</label>
                 </div>
             </div>
             <div class="form-group">
@@ -63,43 +63,43 @@
             <div class="form-group">
                 <h1>Who do you travel with?</h1>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="companions" value="spouse/significant other" />
-                    <label>Spouse/Significant Other</label>
+                    <input type="checkbox" name="companions" value="spouse/significant other" id="spouse"/>
+                    <label for="spouse">Spouse/Significant Other</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="companions" value="friends" />
-                    <label>Friends</label>
+                    <input type="checkbox" name="companions" value="friends" id="friends"/>
+                    <label for="friends">Friends</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="companions" value="children" />
-                    <label>Offspring</label>
+                    <input type="checkbox" name="companions" value="children" id="children"/>
+                    <label for="children">Offspring</label>
                 </div>
             </div>
             <div class="form-group">
                 <h1>What kind of travel experience do you and your [friends, children, spouse] enjoy?</h1>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="adventure" />
-                    <label>Adventure</label>
+                    <input type="checkbox" name="travel_type" value="adventure" id="adventure" />
+                    <label for="adventure">Adventure</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="relaxing" />
-                    <label>Relaxing</label>
+                    <input type="checkbox" name="travel_type" value="relaxing" id="relaxing"/>
+                    <label for="relaxing">Relaxing</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="adventure" />
-                    <label>Off the Beaten Path</label>
+                    <input type="checkbox" name="travel_type" value="adventure" id="path"/>
+                    <label for="path">Off the Beaten Path</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="special_events" />
-                    <label>Special Events</label>
+                    <input type="checkbox" name="travel_type" value="special_events" id="events"/>
+                    <label for="events">Special Events</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="outdoors" />
-                    <label>Outdoors</label>
+                    <input type="checkbox" name="travel_type" value="outdoors" id="outdoors"/>
+                    <label for="outdoors">Outdoors</label>
                 </div>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="travel_type" value="family" />
-                    <label>Family-Friendly</label>
+                    <input type="checkbox" name="travel_type" value="family" id="family"/>
+                    <label for="family">Family-Friendly</label>
                 </div>
             </div>
             <div class="form-group">
