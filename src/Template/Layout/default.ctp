@@ -53,7 +53,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
         <div class="profile-menu">
             <ul>
                 <li><a href="/account/users/index">My Questions</a></li>
-                <li><a href="/trips/add">+Add a Trip</a></li>
+                <li><a href="/trips/add">+ Add a Trip</a></li>
                 <li><a href="/">Log Out</a></li>
             </ul>
         </div>

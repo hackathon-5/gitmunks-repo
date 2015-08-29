@@ -3,7 +3,7 @@
 <div class="forms-content">
 <form id="add">
     <div class="form-group current">
-        <h3>Get recommendations for your trip</h3>
+        <h1>Get recommendations for your trip</h1>
         <p>Alright, [name], where do you want to go?</p>
         <div class="frame form-inline">
             <input type="text" name="city" placeholder="City" class="form-control" />
@@ -52,7 +52,7 @@
     </div>
     <div class="form-group">
         <p>Super cool! I bet you will have a great trip. While you wait on some responses would you like to help some people coming to your area?</p>
-        <a href="/account/users/index" class="btn main-button">Help Some Peeps</a> |
+        <a href="/account/users/index" class="btn main-button">Help Some Peeps</a>
         <a href="/account/users/index" class="btn main-button">Go to My Account</a>
     </div>
 </form>
