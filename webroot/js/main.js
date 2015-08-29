@@ -15,6 +15,10 @@ Form = {
         $('input.tabbable').on('keydown', this.handle_button.bind(this));
         this.update_nav();
     },
+    /**
+     * The user can tab to the next page
+     * @param e
+     */
     handle_button: function (e) {
         var keyCode = e.keyCode || e.which;
 
@@ -24,6 +28,9 @@ Form = {
             this.save();
         }
     },
+    /**
+     * Save the data locally so we can eventually persist it in the db
+     */
     save: function () {
         data = this.form.serializeArray();
         _.each(data, function(field){
@@ -32,6 +39,10 @@ Form = {
         }.bind(this));
 
     },
+    /**
+     * Persist the form
+     * @param e
+     */
     save_to_db: function (e) {
         var url = $(e.currentTarget).data('url');
         $.ajax({
@@ -40,6 +51,11 @@ Form = {
             type: 'POST'
         })
     },
+    /**
+     * Used to insert our captured data back into the form
+     * @param field
+     * @param value
+     */
     insert: function (field, value){
         $('[data-insert="'+field+'"]').html(value.trim());
     },

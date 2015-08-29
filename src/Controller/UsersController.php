@@ -13,7 +13,10 @@ class UsersController extends AppController{
         $this->Auth->allow(['register']);
     }
 
-
+    /**
+     * Register a user with a new account
+     * TODO - send them a marketing email
+     */
     public function register(){
         if($this->request->is('post')){
             $user = $this->Users->newEntity();
