@@ -1,3 +1,5 @@
+@import "compass/css3/transform";
+
 // Colors
 $dk_grey: #29393E;
 $red: #FE5B5B;
@@ -14,3 +16,13 @@ header{height:60px;background:$dk_grey;text-align:center;
 }
 
 // account/users/index
+
+.hero{height:150px;background-size:cover;background-position:center;text-align:center;
+	h1{position:relative;top:50%;transform:translateY(-50%);color:white;}
+}
+section.posts{
+	.post{position:relative;padding:10px 0;
+		.question{margin-left:10px;width:60%;display:inline-block;}
+		svg{fill:$red;width:20px;height:20px;position:absolute;right:20px;top:10px;}
+	}
+}
