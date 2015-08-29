@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <h1>What kind of travel experience do you and your [friends, children, spouse] enjoy?</h1>
+                <h1>What kind of travel experience do you and your peeps enjoy?</h1>
                 <div class="checkbox-wrap">
                     <input type="checkbox" name="travel_type" value="adventure" id="adventure" />
                     <label for="adventure">Adventure</label>
