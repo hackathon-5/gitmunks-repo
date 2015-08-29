@@ -4,7 +4,7 @@
         <form id="registration">
             <div class="form-group current">
                 <h1>Hi there, welcome to Trek. What’s your name?</h1>
-                <input type="text" name="name" required="required" class="form-control tabbable" />
+                <input type="text" name="name" required="required" class="form-control tabbable" autocomplete="autocomplete" />
             </div>
             <div class="form-group">
                 <div class="frame">
@@ -28,21 +28,37 @@
                     <input type="checkbox" name="why" value="music" />
                     <label>A vibrant music scene</label>
                 </div>
-        <!--        <button class="btn btn-default">It’s foodie heaven</button>-->
-        <!--        <button class="btn btn-default">A vibrant music scene</button>-->
-        <!--        <button class="btn btn-default">The art community is thriving</button>-->
-        <!--        <button class="btn btn-default">The shopping is first-rate</button>-->
-        <!--        <button class="btn btn-default">Thrilling amusements</button>-->
-        <!--        <button class="btn btn-default">For the history</button>-->
-        <!--        <button class="btn btn-default">To landscape is beautiful.</button>-->
-        <!--        <button class="btn btn-default">The nightlife is wild.</button>-->
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="art" />
+                    <label>The art community is thriving</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="shopping" />
+                    <label>The shopping is first-rate</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="amusements" />
+                    <label>Thrilling amusements</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="history" />
+                    <label>For the history</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="landscape" />
+                    <label>To landscape is beautiful</label>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="why" value="nightlife" />
+                    <label>The nightlife is wild</label>
+                </div>
             </div>
             <div class="form-group">
                 <h1>Wow, <span data-insert="city"></span> sounds like a really hip place to visit!</h1>
                 <h1>In order to bring you some great travel tips, we’d like to know a little bit about your travel preferences.</h1>
                 <h1>Do you travel with others or do you like to fly solo?</h1>
-                <button class="btn btn-default next main-button">Wandering Soul</button>
-                <button class="btn btn-default next main-button">More is Better</button>
+                <button class="btn btn-default next main-button hide_nav">Wandering Soul</button>
+                <button class="btn btn-default next main-button hide_nav">More is Better</button>
             </div>
             <div class="form-group">
                 <h1>Who do you travel with?</h1>
@@ -92,8 +108,8 @@
             </div>
             <div class="form-group">
                 <h1>And we’re done! Now for the fun stuff. What would you like to do, <span data-insert="name"></span>?</h1>
-                <a href="/trips/add" class="btn btn-primary main-button">Get Travel Advice</a>
-                <a href="/account/users/index" class="btn btn-success main-button">Give Travel Advice</a>
+                <a href="/trips/add" class="btn btn-primary main-button hide_nav">Get Travel Advice</a>
+                <a href="/account/users/index" class="btn btn-success main-button hide_nav">Give Travel Advice</a>
             </div>
             <div class="form-group">
                 <a class="btn btn-success" href="/account/users/index">Register</a>
