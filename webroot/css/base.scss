@@ -1,4 +1,5 @@
-@import "smacss/base.scss";
-@import "smacss/layout.scss";
-@import "smacss/modules.scss";
-@import "smacss/states.scss";
+.form-group{display:none;
+  &.current{display:block;}
+}
+
+header{background:black;}
