@@ -19,7 +19,7 @@ class UsersController extends \App\Controller\AppController{
 
         $mytrips = $this->Trips->find('all')->where(['user_id'=>$this->Auth->user('id')])->contain(['Users', 'Comments']);
 
-        $trips = $this->Trips->find('all')->where(['user_id !='=>$this->Auth->user('id')])->contain(['Users', 'Comments']);
+        $trips = $this->Trips->find('all')->where(['user_id !='=>$this->Auth->user('id'), 'city'=>$this->Auth->user('city')])->contain(['Users', 'Comments']);
 
         $this->set(compact('trips', 'mytrips'));
     }
