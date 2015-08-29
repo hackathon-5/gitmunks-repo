@@ -21,6 +21,13 @@
 		.post.answer{
 			svg{fill:#feda7a;}
 		}
+		@include bp(desktop){width: 900px;margin: 20px auto;}
+		.post{
+			@include bp(desktop{padding-left:10px;}
+		}
+		.post .question {
+			@include bp(desktop){width:80%}
+		}
 	}
 }
 
