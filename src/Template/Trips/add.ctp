@@ -20,29 +20,28 @@
         <p>Which travel experience best describes this trip?</p>
 
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="adventure" />
-        <label>Adventure</label>
-        </div>
-
-        <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="relaxing" />
-        <label>Relaxing</label>
+        <input type="checkbox" name="travel_type" value="adventure" id="adventure" />
+        <label for="adventure">Adventure</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="adventure" />
-        <label>Off the Beaten Path</label>
+        <input type="checkbox" name="travel_type" value="relaxing" id="relaxing"/>
+        <label for="relaxing">Relaxing</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="special_events" />
-        <label>Special Events</label>
+        <input type="checkbox" name="travel_type" value="off-the-beaten-path" id="path"/>
+        <label for="path">Off the Beaten Path</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="outdoors" />
-        <label>Outdoors</label>
+        <input type="checkbox" name="travel_type" value="special_events" id="special-events"/>
+        <label for="special-events">Special Events</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="family" />
-        <label>Family-Friendly</label>
+        <input type="checkbox" name="travel_type" value="outdoors" id="outdoors"/>
+        <label for="outdoors">Outdoors</label>
+        </div>
+        <div class="checkbox-wrap">
+        <input type="checkbox" name="travel_type" value="family" id="family"/>
+        <label for="family">Family-Friendly</label>
         </div>
     </div>
     <div class="form-group">
