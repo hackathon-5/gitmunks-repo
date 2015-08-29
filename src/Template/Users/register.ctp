@@ -3,15 +3,15 @@
     <div class="forms-content">
         <form id="registration">
             <div class="form-group current">
-                <p>Hi there, welcome to Trek. What’s your name?</p>
+                <h1>Hi there, welcome to Trek. What’s your name?</h1>
                 <input type="text" name="name" required="required" class="form-control tabbable" />
             </div>
             <div class="form-group">
                 <div class="frame">
-                    <p>Hi, <span data-insert="name">Name</span>, it’s really great to meet you. Let’s get to know each other a little.</p>
+                    <h1>Hi, <span data-insert="name">Name</span>, it’s really great to meet you. Let’s get to know each other a little.</h1>
                 </div>
                 <div class="frame form-inline">
-                    <p>We live in Greenville, SC, USA. Where do you live?</p>
+                    <h1>We live in Greenville, SC, USA. Where do you live?</h1>
                     <input type="text" name="city" placeholder="City" class="form-control" />
                     <input type="text" name="state" placeholder="State/Region" class="form-control" />
                     <input type="text" name="country" placeholder="Country" class="form-control tabbable" />
@@ -19,11 +19,11 @@
 
             </div>
             <div class="form-group">
-                <p>Why would someone want to visit <span data-insert="city">City</span>?</p>
-                <label>It’s foodie heaven</label>
+                <h1>Why would someone want to visit <span data-insert="city">City</span>?</h1>
                 <input type="checkbox" name="why" value="food" />
-                <label>A vibrant music scene</label>
+                <label>It’s foodie heaven</label>
                 <input type="checkbox" name="why" value="music" />
+                <label>A vibrant music scene</label>
         <!--        <button class="btn btn-default">It’s foodie heaven</button>-->
         <!--        <button class="btn btn-default">A vibrant music scene</button>-->
         <!--        <button class="btn btn-default">The art community is thriving</button>-->
@@ -80,7 +80,7 @@
                 <a class="btn btn-success" href="/account/users/index">Register</a>
             </div>
         </form>
-        <a class="btn btn-default back">Back</a>
-        <a class="btn btn-default next">Next</a>
+        <a class="btn btn-default back main-button">Back</a>
+        <a class="btn btn-default next main-button">Next</a>
     </div>
 </div>
