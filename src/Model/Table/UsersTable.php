@@ -30,6 +30,8 @@ class UsersTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
+        $this->addBehavior('Timestamp');
+
         $this->hasMany('Comments', [
             'foreignKey' => 'user_id'
         ]);

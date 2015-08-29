@@ -38,11 +38,25 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth');
+        $this->loadComponent('Auth', [
+            'authorize' => 'Controller',
+            'loginRedirect' => '/account/users/index',
+            'logoutRedirect' => '/'
+        ]);
     }
 
     public function beforeFilter(\Cake\Event\Event $event){
-        $this->Auth->setUser(['id'=>1, 'firstname'=>'Michael', 'lastname'=>'Oostdyk']);
-        $this->Auth->allow('*');
+        $this->Auth->allow(['display']);
+    }
+
+    public function isAuthorized($user)
+    {
+        // Admin can access every action
+        if (isset($user['role']) && $user['role'] === 'user') {
+            return true;
+        }
+
+        // Default deny
+        return false;
     }
 }
