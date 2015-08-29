@@ -15,7 +15,7 @@
             </a>
         </div>
     <?php endforeach; ?>
-    <h1>People who need your help.</h1>
+    <h1>Travelers who need your help.</h1>
     <?php foreach($trips as $trip): ?>
     <div class="post <?= $trip->comment_count > 0? 'answer':''; ?>">
         <a href="/trips/view/<?= $trip->id; ?>">
