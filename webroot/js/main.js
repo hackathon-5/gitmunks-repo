@@ -5,11 +5,13 @@ Form = {
     back_el: '.back',
     current_el: '.current',
     group_el: '.form-group',
+    complete_el: '.complete',
     init: function (form) {
         this.form = $(form);
         $(this.back_el+','+this.next_el).click(this.save.bind(this));
         $(this.back_el).click(this.back.bind(this));
         $(this.next_el).click(this.next.bind(this));
+        $(this.complete_el).click(this.save_to_db.bind(this));
         $('input.tabbable').on('keydown', this.handle_button.bind(this));
     },
     handle_button: function (e) {
@@ -28,6 +30,14 @@ Form = {
             this.insert(field.name, field.value);
         }.bind(this));
 
+    },
+    save_to_db: function (e) {
+        var url = $(e.currentTarget).data('url');
+        $.ajax({
+            url:url,
+            data: this.form_array,
+            type: 'POST'
+        })
     },
     insert: function (field, value){
         $('[data-insert="'+field+'"]').html(value.trim());

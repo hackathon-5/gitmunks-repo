@@ -37,7 +37,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
-<body>
+<body class="<?= !empty($body_class)?$body_class: ''; ?>">
     <?php include_once('svg-defs.svg'); ?>
     <header>
         <a href="#" id="hamburger">

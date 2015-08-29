@@ -1,3 +1,4 @@
+<?php $this->set('body_class', 'register'); ?>
 <form id="registration">
     <div class="form-group current">
         <p>Hi there, welcome to Trek. What’s your name?</p>
@@ -63,6 +64,10 @@
         <input type="checkbox" name="travel_type" value="family" />
         <label>Family-Friendly</label>
 
+    </div>
+    <div class="form-group">
+        <p>Push the button and expierience Trek. Oh and we'll save your data too.</p>
+        <a data-url="/users/register" class="next complete btn btn-primary">Start Trekking!</a>
     </div>
     <div class="form-group">
         <p>And we’re done! Now for the fun stuff. What would you like to do, <span data-insert="name"></span>?</p>
