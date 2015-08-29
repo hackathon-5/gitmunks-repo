@@ -17,7 +17,7 @@ class TripsController extends AppController{
     }
 
     function view($id){
-        $trip = $this->Trips->find()->where(['Trips.id'=>$id])->contain(['Comments', 'Users'])->first();
+        $trip = $this->Trips->find()->where(['Trips.id'=>$id])->contain(['Comments.Users', 'Users'])->first();
         $this->set(compact('trip'));
     }
 }
