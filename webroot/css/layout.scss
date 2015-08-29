@@ -61,3 +61,16 @@ header{height:60px;background:$dk_grey;text-align:center;
 		&:hover{background-color:#29393e;color:#fff;}
 	}
 }
+
+.home{background-attachment:fixed;
+	.forms-content{margin-bottom:60px;}
+	.extra-content{width:100%;padding:60px 0px;text-align:center;
+		h1{max-width:80%;margin:0 auto;}
+	}
+	.first{background:white;
+		h1{color:#29393e;}
+	}
+	.third{background:#feda7a;
+		h1{color:#fe6e6e;}
+	}
+}
