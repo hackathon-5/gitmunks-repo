@@ -12,7 +12,7 @@ header{height:60px;background:$dk_grey;text-align:center;
 	.header-logo{padding:10px 0;display:inline-block}
 	.header-logo img{width:116px;margin:0 auto;display:block;}
 	.profile{position:absolute;top:15px;right:15px;}
-	.hamburger{position:absolute;top:15px;left:15px;}
+	.hamburger{position:absolute;top:15px;left:15px;display:none;}
 }
 
 .profile-menu{display:none;z-index: 200;background: $dk_grey;width: auto;position: absolute;top: 60px;right: 0px;padding: 45px;text-align: left;
@@ -51,6 +51,10 @@ header{height:60px;background:$dk_grey;text-align:center;
 	.plus{width: 18px;height: 15px;display: inline-block;transform: translateY(20%);fill:#29393e;
 		&:hover{cursor:pointer;fill:#FEDA7A;}
 	}
+	.plus-link{color:#29393e;
+		&:hover{text-decoration:none;}
+	}
+	.comment_points{font-size:10px;margin:0px 1px; background-color:transparent;color:#29393e;display:inline-block;transform:(translateY(-7%));-webkit-transform:(translateY(-7%));-moz-transform:(translateY(-7%));}
 	.comment .name{margin-bottom:0;}
 	.user{width:90%;margin:0px 20px;}
 	.text-inner{width:90%;margin:0px 20px;padding:20px 0 5px;font-family:'Open Sans', serif;font-size:14px;line-height:20px;}
