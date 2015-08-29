@@ -20,7 +20,7 @@ class UsersController extends AppController{
             $data = ['firstname'=>$this->request->data['name'], 'role'=>'user'] + $this->request->data;
             $user = $this->Users->patchEntity($user, $data);
             $this->Users->save($user);
-            $this->Auth->setUser($user);
+            $this->Auth->setUser($user->toArray());
             exit;
         }
     }
