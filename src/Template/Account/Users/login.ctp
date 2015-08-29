@@ -1,3 +1,6 @@
+<?php $this->set('body_class', 'login'); ?>
+<div class="forms-container">
+    <div class="forms-content">
 <form id="login" action="/account/users/index" method="POST">
     <div class="form-group">
         <label>Your Email</label>
@@ -11,3 +14,5 @@
         <input type="submit" class="btn btn-primary" value="Login" />
     </div>
 </form>
+</div>
+</div>
