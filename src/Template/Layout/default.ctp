@@ -59,9 +59,6 @@ $cakeDescription = 'Sparc Hackathon \'15';
                 <?= $this->fetch('content') ?>
             </div>
         </div>
-        <footer>
-            FOOOOTER
-        </footer>
     </div>
 </body>
 </html>
