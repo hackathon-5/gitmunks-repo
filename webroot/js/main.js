@@ -98,12 +98,48 @@ Form = {
 
 }
 
+Rating = {
+    rating_el: '.plus-link:not(.rated)',
+    comment_points: '.comment_points',
+    user_points: '.user_points',
+    init: function () {
+        $(this.rating_el).click(this.rate.bind(this));
+    },
+    rate: function (e) {
+        e.preventDefault();
+        var button = $(e.currentTarget);
+        button.off();
+        this.comment = button.closest('.comment');
+        data = {}
+        data.comment_id = this.comment.find(this.rating_el).data('comment-id');
+        data.user_id = this.comment.find(this.rating_el).data('user-id');
+        $.ajax({
+            url: '/comments/rate',
+            data: data,
+            success: this.success.bind(this),
+            dataType: 'json',
+            type: 'POST'
+        });
+    },
+    success: function(data){
+        if(data.id){
+            this.comment.find(this.rating_el).addClass('rated');
+            this.comment.find(this.comment_points).html(data.rating_count);
+            this.comment.find(this.user_points).html('+'+data.user.rating_count);
+        }else{
+            alert('Trek is off track. Please reload the page and try to rate again!');
+        }
+    }
+}
+
 $(document).ready(function () {
     if($('#registration').is('*')){
         Form.init('#registration');
     }else if($('#add').is('*')){
         Form.init('#add');
     }
+
+    Rating.init();
 
     var toggleProfile = $('header #profile');
     var profileMenu = $('.profile-menu');

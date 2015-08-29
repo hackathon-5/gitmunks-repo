@@ -17,7 +17,17 @@ class TripsController extends AppController{
     }
 
     function view($id){
-        $trip = $this->Trips->find()->where(['Trips.id'=>$id])->contain(['Comments.Users', 'Users'])->first();
+        $trip = $this->Trips->find()->where(['Trips.id'=>$id])->contain(['Comments.Users', 'Comments.Ratings', 'Users'])->first();
+        // TODO - refactor
+        foreach($trip->comments as &$comment){
+            $comment->rated = false;
+            foreach($comment->ratings as $rating){
+                if($this->Auth->user('id') == $rating->rater_id){
+                    $comment->rated = true;
+                    break;
+                }
+            }
+        }
         $this->set(compact('trip'));
     }
 }

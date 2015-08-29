@@ -18,10 +18,10 @@
 		        	</div>
 		    	</div>
 		    	<div class="user">
-		    		<p class="name"><?= $comment->user->firstname.' '.$comment->user->lastname; ?></p>
-		    		<p><?= $comment->user->comment_count; ?> comments <span class="points">+<?= $comment->user->rating; ?></span>
+		    		<p class="name">(<span class="user_points">+<?= $comment->user->rating_count; ?></span>) <?= $comment->user->firstname.' '.$comment->user->lastname; ?></p>
+		    		<p><?= $comment->user->comment_count; ?> comments
 		    		</p>
-		    		<a><svg class="plus"><use xlink:href="#plus"></use></svg></a>
+		    		<a class="plus-link <?= ($comment->rated)?'rated':''; ?>" data-comment-id="<?= $comment->id; ?>" data-user-id="<?= $comment->user_id; ?>"><svg class="plus"><use xlink:href="#plus"></use></svg> (<span class="comment_points"><?= $comment->rating_count; ?></span>)</a>
 		    	</div>
 		    </div>
 		<?php endforeach; ?>

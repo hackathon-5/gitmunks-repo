@@ -1,19 +1,19 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Comment;
+use App\Model\Entity\Rating;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Comments Model
+ * Ratings Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Users
- * @property \Cake\ORM\Association\BelongsTo $Trips
+ * @property \Cake\ORM\Association\BelongsTo $Comments
  */
-class CommentsTable extends Table
+class RatingsTable extends Table
 {
 
     /**
@@ -26,24 +26,19 @@ class CommentsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('comments');
+        $this->table('ratings');
         $this->displayField('id');
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
-        $this->addBehavior('CounterCache', [
-            'Users' => ['comment_count'],
-            'Trips' => ['comment_count']
-        ]);
+        $this->addBehavior('CounterCache', ['Users' => ['rating_count'], 'Comments' => ['rating_count']]);
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id'
         ]);
-        $this->belongsTo('Trips', [
-            'foreignKey' => 'trip_id'
+        $this->belongsTo('Comments', [
+            'foreignKey' => 'comment_id'
         ]);
-
-        $this->hasMany('Ratings');
     }
 
     /**
@@ -58,9 +53,6 @@ class CommentsTable extends Table
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
 
-        $validator
-            ->allowEmpty('comment');
-
         return $validator;
     }
 
@@ -74,7 +66,7 @@ class CommentsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['trip_id'], 'Trips'));
+        $rules->add($rules->existsIn(['comment_id'], 'Comments'));
         return $rules;
     }
 }

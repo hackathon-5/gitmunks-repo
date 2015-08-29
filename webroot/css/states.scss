@@ -28,7 +28,7 @@
 		}
 		@include bp(desktop){width: 900px;margin: 20px auto;}
 		.post{
-			@include bp(desktop{padding-left:10px;}
+			@include bp(desktop){padding-left:10px;}
 		}
 		.post .question {
 			@include bp(desktop){width:80%}
@@ -48,3 +48,5 @@
 		@include bp(tablet){ max-width:400px; margin:0 auto;}
 	}
 }
+
+.trip .plus-link.rated .plus{cursor:pointer;fill:#FEDA7A;}

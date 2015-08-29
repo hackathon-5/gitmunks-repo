@@ -102,4 +102,21 @@ class CommentsController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+    /**
+     * Rate a comment and increase the rep of the comment and the user
+     */
+    public function rate()
+    {
+        if($this->request->is('post')) {
+            $this->loadModel('Ratings');
+            $ratings = $this->Ratings->newEntity();
+            $data = ['rater_id'=>$this->Auth->user('id')] + $this->request->data;
+            $ratings = $this->Ratings->patchEntity($ratings, $data);
+            $this->Ratings->save($ratings);
+            $comment = $this->Comments->find()->where(['Comments.id'=>$this->request->data['comment_id']])->contain(['Users'])->first();
+            echo json_encode($comment);
+            exit;
+        }
+    }
 }
