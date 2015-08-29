@@ -65,5 +65,9 @@ Form = {
 }
 
 $(document).ready(function () {
-    Form.init('#registration');
+    if($('#registration').is('*')){
+        Form.init('#registration');
+    }else if($('#add').is('*')){
+        Form.init('#add');
+    }
 })
