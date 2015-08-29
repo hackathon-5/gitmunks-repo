@@ -13,6 +13,7 @@ Form = {
         $(this.next_el).click(this.next.bind(this));
         $(this.complete_el).click(this.save_to_db.bind(this));
         $('input.tabbable').on('keydown', this.handle_button.bind(this));
+        this.update_nav();
     },
     handle_button: function (e) {
         var keyCode = e.keyCode || e.which;
@@ -64,13 +65,33 @@ Form = {
         return $(this.current_el).prev(this.group_el);
     },
     transition: function (current, next){
+        $(current).removeClass('current')
+        $(next).addClass('current');
+        this.update_nav();
         $(current).fadeOut(400, function (el) {
-            $(current).removeClass('current')
             $(next).fadeIn(function (el) {
-                $(next).addClass('current');
                 $('input:first-of-type').focus();
             }.bind(this));
         }.bind(this))
+    },
+    update_nav: function () {
+        if(!this.get_prev_group().is('*')){
+            $(this.back_el).hide();
+        }else{
+            $(this.back_el).fadeIn();
+        }
+
+        if(!this.get_next_group().is('*') || $(this.current_el+' .complete').is('*') || $(this.current_el+' .hide_nav').is('*')){
+            els = $(this.next_el+':not(.complete,.hide_nav), '+this.back_el)
+            $.each(els, function(i, el) {
+                $(el).fadeOut();
+            });
+
+        }else if(!this.get_prev_group().is('*')){
+            $(this.next_el).fadeIn();
+        }else{
+            $(this.next_el +', '+this.back_el).fadeIn();
+        }
     }
 
 }
