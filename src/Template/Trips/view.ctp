@@ -21,7 +21,7 @@
 		    		<p class="name"><?= $comment->user->firstname.' '.$comment->user->lastname; ?></p>
 		    		<p><?= $comment->user->comment_count; ?> comments <span class="points">+<?= $comment->user->rating; ?></span>
 		    		</p>
-		    		<svg class="plus"><use xlink:href="#plus"></use></svg>
+		    		<a><svg class="plus"><use xlink:href="#plus"></use></svg></a>
 		    	</div>
 		    </div>
 		<?php endforeach; ?>
