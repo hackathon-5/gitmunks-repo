@@ -26,6 +26,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
     </title>
     <?= $this->Html->meta('icon') ?>
 
+    <?= $this->Html->css('/js/components/bootstrap/dist/css/bootstrap.min.css') ?>
     <?= $this->AssetCompress->css('base.css') ?>
 
     <?= $this->Html->script('components/jquery/dist/jquery'); ?>
