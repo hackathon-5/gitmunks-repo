@@ -12,14 +12,14 @@
 	<div class="comments">
 		<?php foreach($trip->comments as $comment): ?>
 		    <div class="comment">
-		    	<div class="user">
-		    		<p class="name">Mike Oostdyk</p>
-		    		<p>135 comments <span class="points">+28</span></p>
-		    	</div>
 		        <div class="text">
 		        	<div class="text-inner">
 		        	<?= $comment->comment; ?>
 		        	</div>
+		    	</div>
+		    	<div class="user">
+		    		<p class="name">Mike Oostdyk</p>
+		    		<p>135 comments <span class="points">+28</span></p>
 		    	</div>
 		    </div>
 		<?php endforeach; ?>

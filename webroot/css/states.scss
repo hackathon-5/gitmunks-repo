@@ -12,7 +12,7 @@
 }
 
 
-.user-index{
+.user-index, .trip{
 	.hero{
 		@include bp(tablet){height:300px;}
 		@include bp(desktop){height:400px;}
