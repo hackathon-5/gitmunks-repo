@@ -4,7 +4,7 @@
 <form id="add">
     <div class="form-group current">
         <h3>Get recommendations for your trip</h3>
-        <p>Alright, [name], where do you want to go?</p>
+        <p>Alright, <?= $this->request->session()->read('Auth.User.firstname'); ?>, where do you want to go?</p>
         <div class="frame form-inline">
             <input type="text" name="city" placeholder="City" class="form-control" />
             <input type="text" name="state" placeholder="State/Region" class="form-control" />
