@@ -103,11 +103,16 @@
                 </div>
             </div>
             <div class="form-group">
-                <h1>Push the button and expierience Trek. Oh and we'll save your data too.</h1>
+                <h1>Well we would like you to come back sometime, so can we get and email and password to remember you by?</h1>
+                <input type="email" name="username" placeholder="Email" class="form-control" />
+                <input type="password" name="password" placeholder="Password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <h1>Alright! Push the button and expierience Trek. Oh and we'll save your data too.</h1>
                 <a data-url="/users/register" class="next complete btn main-button">Start Trekking!</a>
             </div>
             <div class="form-group">
-                <h1>And we’re done! Now for the fun stuff. What would you like to do, <span data-insert="name"></span>?</h1>
+                <h1>Now for the fun stuff. What would you like to do, <span data-insert="name"></span>?</h1>
                 <a href="/trips/add" class="btn main-button hide_nav">Get Travel Advice</a>
                 <a href="/account/users/index" class="btn main-button hide_nav">Give Travel Advice</a>
             </div>
