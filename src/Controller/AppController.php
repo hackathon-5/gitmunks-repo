@@ -38,5 +38,11 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth');
+    }
+
+    public function beforeFilter(\Cake\Event\Event $event){
+        $this->Auth->setUser(['id'=>1, 'firstname'=>'Michael', 'lastname'=>'Oostdyk']);
+        $this->Auth->allow('*');
     }
 }

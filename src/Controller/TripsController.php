@@ -10,7 +10,8 @@ class TripsController extends AppController{
     function add(){
         if($this->request->is('post')){
             $trip = $this->Trips->newEntity();
-            $trip = $this->Trips->patchEntity($trip, $this->request->data);
+            $data = ['user_id'=>$this->Auth->user('id')] + $this->request->data;
+            $trip = $this->Trips->patchEntity($trip, $data);
             $this->Trips->save($trip);
         }
     }
