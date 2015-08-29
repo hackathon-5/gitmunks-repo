@@ -15,5 +15,10 @@ class UsersController extends \App\Controller\AppController{
     public function index(){
         // TODO - Get users in their area they could help
         // TODO - Get questions they have outstanding
+        $trips = $this->Trips->find();
+    }
+
+    public function login(){
+
     }
 }
