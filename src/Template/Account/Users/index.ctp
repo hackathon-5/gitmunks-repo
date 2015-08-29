@@ -1,6 +1,6 @@
 <?php $this->set('body_class', 'user-index'); ?>
-<div class="hero" style="background:url('/img/greenville-hero.jpg'); background-size:cover;background-position:center center;">
-    <h1>Greenville, SC</h1>
+<div class="hero" style="background:url('/img/<?= str_replace(" ", "_", strtolower($this->request->session()->read('Auth.User.city'))); ?>-hero.jpg'); background-size:cover;background-position:center center;">
+    <h1><?= $this->request->session()->read('Auth.User.city'); ?>, <?= $this->request->session()->read('Auth.User.state'); ?></h1>
 </div>
 <section class="posts">
     <h1>My Trip Questions</h1>
