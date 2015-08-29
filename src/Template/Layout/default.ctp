@@ -36,6 +36,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic|Open+Sans:700,300' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?= !empty($body_class)?$body_class: ''; ?>">
     <?php include_once('svg-defs.svg'); ?>

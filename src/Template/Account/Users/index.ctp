@@ -1,3 +1,4 @@
+<?php $this->set('body_class', 'user-index'); ?>
 <div class="hero" style="background:url('/img/greenville-hero.jpg'); background-size:cover;background-position:center center;">
     <h1>Greenville, SC</h1>
 </div>
