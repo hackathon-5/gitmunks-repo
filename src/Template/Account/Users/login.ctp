@@ -1,7 +1,7 @@
 <?php $this->set('body_class', 'login'); ?>
 <div class="forms-container">
     <div class="forms-content">
-        <form id="login" action="/account/users/index" method="POST">
+        <form id="login" action="/account/users/login" method="POST">
             <h3>Login</h3>
             <div class="form-group">
                 <input type="email" name="username" class="form-control" required="required" placeholder="Email" />
