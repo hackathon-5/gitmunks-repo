@@ -7,6 +7,10 @@ use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 
 class TripsController extends AppController{
+    /**
+     * Add a trip
+     * TODO - add validation of save.
+     */
     function add(){
         if($this->request->is('post')){
             $trip = $this->Trips->newEntity();
@@ -16,9 +20,13 @@ class TripsController extends AppController{
         }
     }
 
+    /**
+     * @param $id
+     * View a single trip
+     * TODO - refactor how "rated" is determined for a user
+     */
     function view($id){
         $trip = $this->Trips->find()->where(['Trips.id'=>$id])->contain(['Comments.Users', 'Comments.Ratings', 'Users'])->first();
-        // TODO - refactor
         foreach($trip->comments as &$comment){
             $comment->rated = false;
             foreach($comment->ratings as $rating){
