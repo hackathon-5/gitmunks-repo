@@ -8,32 +8,30 @@
             <svg class="comment"><use xlink:href="#comment"></use></svg>
         </a>
     </div>
-    <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
+    <div class="post answer">
+        <a href="#">
+            <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
+            <span class="answers">2</span>
+            <svg class="comment"><use xlink:href="#comment"></use></svg>
+        </a>
     </div>
     <div class="post answer">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
+        <a href="#">
+            <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
+            <span class="answers">10</span>
+            <svg class="comment"><use xlink:href="#comment"></use></svg>
+        </a>
     </div>
     <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
+        <a href="#">
+            <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
+            <svg class="comment"><use xlink:href="#comment"></use></svg>
+        </a>
     </div>
     <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
-    </div>
-    <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
-    </div>
-    <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
-    </div>
-    <div class="post">
-        <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
-        <svg class="comment"><use xlink:href="#comment"></use></svg>
+        <a href="#">
+            <p class="question">Searching for a family friendly adventure trip that's super cheap.</p>
+            <svg class="comment"><use xlink:href="#comment"></use></svg>
+        </a>
     </div>
 </section>
