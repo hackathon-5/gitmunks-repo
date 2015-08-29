@@ -1,8 +1,10 @@
 @import "variables.scss";
 
-header{height:60px;background:$dk_grey;
+header{height:60px;background:$dk_grey;text-align:center;
 	svg{fill:#FE5B5B;width:30px;height:30px;}
 	a{display:inline-block;}
 	.header-logo{padding:10px 0;display:inline-block}
 	.header-logo img{width:116px;margin:0 auto;display:block;}
+	.profile{position:absolute;top:15px;right:15px;}
+	.hamburger{position:absolute;top:15px;left:15px;}
 }
