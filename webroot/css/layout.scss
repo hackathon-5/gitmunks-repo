@@ -16,7 +16,7 @@ header{height:60px;background:$dk_grey;text-align:center;
 }
 
 // account/users/index
-.user-index{
+.user-index, .trip{
 	.container{width:100%;}
 	.hero{height:150px;background-size:cover;background-position:center;text-align:center;
 		h1{position:relative;top:50%;transform:translateY(-50%);color:white;margin:0;}
@@ -29,4 +29,14 @@ header{height:60px;background:$dk_grey;text-align:center;
 		}
 		.post:nth-child(even){background:#F5F5F5;}
 	}
+}
+
+.trip{
+	.trip-user{width:90%;margin:20px auto;}
+	.dates{margin-bottom:0;}
+	.name{color:$red;}
+	.comment .name{margin-bottom:0;}
+	.comment .text{background:#F5F5F5;}
+	.user{width:90%;margin:20px auto;}
+	.text-inner{width:90%;margin:20px auto;padding:20px 0;}
 }
