@@ -30,8 +30,8 @@
 			<div class="form-group">
 				<textarea name="comment" class="form-control"></textarea>
 			</div>
-			<div class="form-control">
-				<input type="submit" class="btn" value="Add Your Knowledge" />
+			<div class="">
+				<input type="submit" class="btn submit-response" value="Add Your Knowledge" />
 			</div>
 		</form>
 	</div>
