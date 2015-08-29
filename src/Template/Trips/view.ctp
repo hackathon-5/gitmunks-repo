@@ -24,4 +24,15 @@
 		    </div>
 		<?php endforeach; ?>
 	</div>
+	<div class="add_comment">
+		<form id="add_comment" action="/comments/add/<?= $trip->id; ?>" method="post">
+			<p>Share your local knowledge of <?= $trip->city; ?> with <?= $trip->user->firstname; ?>. Knowledge should always be free.</p>
+			<div class="form-group">
+				<textarea name="comment" class="form-control"></textarea>
+			</div>
+			<div class="form-control">
+				<input type="submit" class="btn" value="Add Your Knowledge" />
+			</div>
+		</form>
+	</div>
 </div>
