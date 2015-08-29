@@ -17,6 +17,8 @@ class UsersController extends \App\Controller\AppController{
         // TODO - Get users in their area they could help
         // TODO - Get questions they have outstanding
         $trips = $this->Trips->find('all')->contain(['Users', 'Comments']);
+
+        $this->set(compact('trips'));
     }
 
     public function login(){

@@ -1,17 +1,19 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Trip;
+use App\Model\Entity\User;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Trips Model
+ * Users Model
  *
+ * @property \Cake\ORM\Association\HasMany $Comments
+ * @property \Cake\ORM\Association\HasMany $Trips
  */
-class TripsTable extends Table
+class UsersTable extends Table
 {
 
     /**
@@ -24,15 +26,16 @@ class TripsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('trips');
+        $this->table('users');
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->addBehavior('Timestamp');
-
-        $this->belongsTo('Users');
-        $this->hasMany('Comments');
-
+        $this->hasMany('Comments', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->hasMany('Trips', [
+            'foreignKey' => 'user_id'
+        ]);
     }
 
     /**
@@ -48,20 +51,10 @@ class TripsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->allowEmpty('city');
+            ->allowEmpty('firstname');
 
         $validator
-            ->allowEmpty('state');
-
-        $validator
-            ->allowEmpty('country');
-
-        $validator
-            ->add('date', 'valid', ['rule' => 'date'])
-            ->allowEmpty('date');
-
-        $validator
-            ->allowEmpty('description');
+            ->allowEmpty('lastname');
 
         return $validator;
     }
