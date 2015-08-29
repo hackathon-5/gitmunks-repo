@@ -19,7 +19,7 @@
 		    	</div>
 		    	<div class="user">
 		    		<p class="name"><?= $comment->user->firstname.' '.$comment->user->lastname; ?></p>
-		    		<p><?= $comment->user->comments; ?> comments <span class="points">+<?= $comment->user->rating; ?></span></p>
+		    		<p><?= $comment->user->comment_count; ?> comments <span class="points">+<?= $comment->user->rating; ?></span></p>
 		    	</div>
 		    </div>
 		<?php endforeach; ?>

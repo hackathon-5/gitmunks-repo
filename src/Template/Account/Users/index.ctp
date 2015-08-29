@@ -5,11 +5,11 @@
 <section class="posts">
     <h1>My Trip Questions</h1>
     <?php foreach($mytrips as $trip): ?>
-        <div class="post <?= count($trip->comments) > 0? 'answer':''; ?>">
+        <div class="post <?= $trip->comment_count > 0? 'answer':''; ?>">
             <a href="/trips/view/<?= $trip->id; ?>">
                 <p class="question"><?= $trip->description; ?></p>
-                <?php if(count($trip->comments) > 0): ?>
-                    <span class="answers"><?= count($trip->comments); ?></span>
+                <?php if($trip->comment_count > 0): ?>
+                    <span class="answers"><?= $trip->comment_count; ?></span>
                 <?php endif; ?>
                 <svg class="comment"><use xlink:href="#comment"></use></svg>
             </a>
@@ -17,11 +17,11 @@
     <?php endforeach; ?>
     <h1>People who need your help.</h1>
     <?php foreach($trips as $trip): ?>
-    <div class="post <?= count($trip->comments) > 0? 'answer':''; ?>">
+    <div class="post <?= $trip->comment_count > 0? 'answer':''; ?>">
         <a href="/trips/view/<?= $trip->id; ?>">
             <p class="question"><?= $trip->description; ?></p>
-            <?php if(count($trip->comments) > 0): ?>
-                <span class="answers"><?= count($trip->comments); ?></span>
+            <?php if( $trip->comment_count > 0): ?>
+                <span class="answers"><?=  $trip->comment_count; ?></span>
             <?php endif; ?>
             <svg class="comment"><use xlink:href="#comment"></use></svg>
         </a>

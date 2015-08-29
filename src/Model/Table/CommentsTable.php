@@ -31,6 +31,10 @@ class CommentsTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('CounterCache', [
+            'Users' => ['comment_count'],
+            'Trips' => ['comment_count']
+        ]);
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id'
