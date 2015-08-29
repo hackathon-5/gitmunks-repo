@@ -67,7 +67,8 @@ Form = {
         $(current).fadeOut(400, function (el) {
             $(current).removeClass('current')
             $(next).fadeIn(function (el) {
-                $(next).addClass('current')
+                $(next).addClass('current');
+                $('input:first-of-type').focus();
             }.bind(this));
         }.bind(this))
     }
