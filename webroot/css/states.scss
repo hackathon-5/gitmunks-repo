@@ -17,6 +17,9 @@
 		@include bp(tablet){height:300px;}
 		@include bp(desktop){height:400px;}
 	}
+	.trip-content{
+		@include bp(desktop){width: 900px;margin: 20px auto;}
+	}
 	section.posts{
 		.post.answer{
 			svg{fill:#feda7a;}
