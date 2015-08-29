@@ -104,12 +104,12 @@
             </div>
             <div class="form-group">
                 <h1>Push the button and expierience Trek. Oh and we'll save your data too.</h1>
-                <a data-url="/users/register" class="next complete btn btn-primary main-button">Start Trekking!</a>
+                <a data-url="/users/register" class="next complete btn main-button">Start Trekking!</a>
             </div>
             <div class="form-group">
                 <h1>And we’re done! Now for the fun stuff. What would you like to do, <span data-insert="name"></span>?</h1>
-                <a href="/trips/add" class="btn btn-primary main-button hide_nav">Get Travel Advice</a>
-                <a href="/account/users/index" class="btn btn-success main-button hide_nav">Give Travel Advice</a>
+                <a href="/trips/add" class="btn main-button hide_nav">Get Travel Advice</a>
+                <a href="/account/users/index" class="btn main-button hide_nav">Give Travel Advice</a>
             </div>
             <div class="form-group">
                 <a class="btn btn-success" href="/account/users/index">Register</a>
