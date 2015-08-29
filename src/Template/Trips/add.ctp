@@ -37,7 +37,7 @@
     <div class="form-group">
         <p>How would you describe your ideal trip in one sentence (less than 200 characters)</p>
         <textarea name="description" class="form-control"></textarea>
-        <a class="btn btn-success next">Get Recommendations</a>
+        <a data-url="/trips/add" class="btn btn-success next complete">Get Recommendations</a>
     </div>
     <div class="form-group">
         <p>Super cool! I bet you will have a great trip. While you wait on some responses would you like to help some people coming to your area?</p>
