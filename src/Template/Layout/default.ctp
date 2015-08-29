@@ -24,7 +24,13 @@ $cakeDescription = 'Sparc Hackathon \'15';
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <!-- <?= $this->Html->meta('icon') ?> -->
+    <?= $this->Html->meta(
+        'favicon.ico',
+        '/favicon.ico',
+        ['type' => 'icon']
+    );
+    ?>
 
     <?= $this->Html->css('/js/components/bootstrap/dist/css/bootstrap.min.css') ?>
     <?= $this->AssetCompress->css('base.css') ?>
