@@ -14,7 +14,9 @@
 
 .user-index, .trip{
 	.hero{
-		@include bp(tablet){height:300px;}
+		@include bp(tablet){height:300px;
+			h1{font-size:54px;}
+		}
 		@include bp(desktop){height:400px;}
 	}
 	.trip-content{
@@ -41,6 +43,8 @@
 	.container{width:100%;}
 }
 
-.register .forms-container .forms-content{
-	@include bp(tablet){ max-width:400px; margin:0 auto;}
+.register, .add {
+	.forms-container .forms-content{
+		@include bp(tablet){ max-width:400px; margin:0 auto;}
+	}
 }
