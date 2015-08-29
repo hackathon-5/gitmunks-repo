@@ -6,7 +6,7 @@
 	<div class="trip-user">
 		<div class="description"><?= $trip->description; ?></div>
 		<p class="name"><?= $trip->user->firstname . ' ' . $trip->user->lastname; ?></p>
-		<p class="dates"><strong>Travel Date:</strong> <?= $trip->date; ?></p>
+		<p class="dates"><strong>Travel Date:</strong> <?= $trip->date->i18nFormat('M-d-Y'); ?></p>
 		<p class="activity"><strong>Desired Activity Type:</strong> Adventurous</p>
 	</div>
 	<div class="comments">
