@@ -1,0 +1,6 @@
+.home, .register{
+	.forms-container{background-image:url('/img/main-bg.jpg');background-position:center;background-repeat:no-repeat;background-size:cover;width:100%;height:100vh;
+		.forms-content{top: 50%;position: relative;transform: translateY(-50%);-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);padding:20px;text-align:center;}
+		h1{margin-bottom:40px;}	
+	}
+}
