@@ -14,9 +14,12 @@ class UsersController extends \App\Controller\AppController{
      */
     public function index(){
         $this->loadModel('Trips');
-        // TODO - Get users in their area they could help
-        // TODO - Get questions they have outstanding
-        $trips = $this->Trips->find('all')->contain(['Users', 'Comments']);
+
+        $mytrips = $this->Trips->find('all')->where(['user_id'=>3])->contain(['Users', 'Comments']);
+
+        $trips = $this->Trips->find('all')->where(['user_id !='=>3])->contain(['Users', 'Comments']);
+
+        $this->set(compact('trips', 'mytrips'));
     }
 
     public function login(){

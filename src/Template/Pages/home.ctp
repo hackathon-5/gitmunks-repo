@@ -3,6 +3,6 @@
 	<div class="forms-content">
 		<h1>Travel like you live there.</h1>
 		<a class="main-button" href="/users/register">Sign Up</a>
-		<a class="main-button" href="/account/users/index">Login</a>
+		<a class="main-button" href="/account/users/login">Login</a>
 	</div>
 </div>

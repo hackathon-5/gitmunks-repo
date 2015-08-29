@@ -1,3 +1,29 @@
+@mixin bp($point) {
+  
+  $bp-tablet: "(min-width: 767px)";
+  $bp-desktop: "(min-width: 1024px)";
+
+  @if $point == tablet {
+    @media #{$bp-tablet} { @content; }
+  }
+  @else if $point == desktop {
+    @media #{$bp-desktop} { @content; }
+  } 
+}
+
+
+.user-index{
+	.hero{
+		@include bp(tablet){height:300px;}
+		@include bp(desktop){height:400px;}
+	}
+	section.posts{
+		.post.answer{
+			svg{fill:#FED567;}
+		}
+	}
+}
+
 .register, .home{
 	header{background:transparent;position:fixed;width:100%;z-index:10;
 		.hamburger, #profile{display:none;}
