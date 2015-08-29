@@ -51,7 +51,7 @@
     </div>
     <div class="form-group">
         <p>Super cool! I bet you will have a great trip. While you wait on some responses would you like to help some people coming to your area?</p>
-        <a href="/account/users/index" class="btn main-button">Help Some Peeps</a>
+        <a href="/account/users/index" class="btn main-button">Help Some Fellow Travelers</a>
         <a href="/account/users/index" class="btn main-button">Go to My Account</a>
     </div>
 </form>
