@@ -15,7 +15,7 @@
 .user-index, .trip{
 	.hero{
 		@include bp(tablet){height:300px;
-			h1{font-size:54px;}
+			h1{font-size:54px;line-height:60px;}
 		}
 		@include bp(desktop){height:400px;}
 	}

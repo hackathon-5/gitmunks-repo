@@ -1,5 +1,5 @@
 <?php $this->set('body_class', 'trip'); ?>
-<div class="hero" style="background:url('/img/<?= strtolower($trip->city); ?>-hero.jpg'); background-size:cover;background-position:center center;">
+<div class="hero" style="background:url('/img/<?= strtolower($trip->city); ?>-hero.jpg'); background-size:cover;background-position:center center;background-color:#31444A;">
     <h1><?= $trip->user->firstname; ?> wants to go to <?= $trip->city; ?>, <?= $trip->state; ?> <?= $trip->country; ?></h1>
 </div>
 <div class="trip-content">
