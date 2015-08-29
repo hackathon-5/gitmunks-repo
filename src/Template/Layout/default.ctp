@@ -40,7 +40,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
 <body>
     <header>
         <div class="header-title">
-            <span><?= $this->fetch('title') ?></span>
+            <img src="img/trek-logo.svg" height="40px" alt="trek logo">
         </div>
     </header>
     <div id="container">
