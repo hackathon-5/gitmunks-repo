@@ -105,6 +105,9 @@ $(document).ready(function () {
         Form.init('#add');
     }
     Menu.init();
+    if($('body').hasClass('home')){
+         Scroll.init();
+    }
     $(".post .question").text(function(index, currentText) {
         return currentText.substr(0, 70)+'...';
     });
@@ -118,5 +121,20 @@ Menu = {
     },
     toggleMenu: function(){
         $(this.profileMenu).slideToggle("fast");
+    }
+}
+
+Scroll = {
+    scroll: 0,
+    init: function(){
+        $(window).scroll(this.scrolled.bind(this));
+    },
+    scrolled: function(){
+        this.scroll = $(window).scrollTop();
+        if (this.scroll > 0){
+           $('header').slideUp('fast'); 
+        } else if(this.scroll === 0) {
+            $('header').slideDown('fast'); 
+        }
     }
 }
