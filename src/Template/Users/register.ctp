@@ -4,7 +4,7 @@
         <form id="registration">
             <div class="form-group current">
                 <p>Hi there, welcome to Trek. What’s your name?</p>
-                <input type="text" name="name" required="required" class="form-control tabbable" />
+                <input type="text" name="name" required="required" class="form-control tabbable" autocomplete="false" />
             </div>
             <div class="form-group">
                 <div class="frame">
@@ -42,9 +42,14 @@
             </div>
             <div class="form-group">
                 <p>Who do you travel with?</p>
-                <button class="btn btn-default next">spouse/significant other</button>
-                <button class="btn btn-default next">friends</button>
-                <button class="btn btn-default next">children</button>
+                <input type="checkbox" name="companions" value="spouse/significant other" />
+                <label>Spouse/Significant Other</label>
+
+                <input type="checkbox" name="companions" value="friends" />
+                <label>Friends</label>
+
+                <input type="checkbox" name="companions" value="children" />
+                <label>Offspring</label>
             </div>
             <div class="form-group">
                 <p>What kind of travel experience do you and your [friends, children, spouse] enjoy?</p>
