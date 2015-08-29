@@ -43,9 +43,9 @@ $cakeDescription = 'Sparc Hackathon \'15';
         <a href="#" id="hamburger">
             <svg class="hamburger"><use xlink:href="#hamburger"></use></svg>
         </a>
-        <div class="header-logo">
+        <a href="/" class="header-logo">
             <img src="/img/trek-logo.svg" height="40px" alt="trek logo">
-        </div>
+        </a>
         <a href="#" id="profile">
             <svg class="profile"><use xlink:href="#profile"></use></svg>
         </a>
