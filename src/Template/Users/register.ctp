@@ -115,7 +115,6 @@
                 <a class="btn btn-success" href="/account/users/index">Register</a>
             </div>
         </form>
-        <a class="btn btn-default back main-button">Back</a>
         <a class="btn btn-default next main-button">Next</a>
     </div>
 </div>

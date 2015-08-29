@@ -55,7 +55,6 @@
         <a href="/account/users/index" class="btn main-button">Go to My Account</a>
     </div>
 </form>
-<a class="btn main-button back">Back</a>
 <a class="btn main-button next">Next</a>
 </div>
 </div>
