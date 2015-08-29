@@ -3,12 +3,12 @@
     <div class="forms-content">
         <form id="registration">
             <div class="form-group current">
-                <h1>Hi there, welcome to Trek. What’s your name?</h1>
+                <h1>Hi there. Welcome to Trek. What’s your name?</h1>
                 <input type="text" name="name" required="required" class="form-control tabbable" autocomplete="autocomplete" />
             </div>
             <div class="form-group">
                 <div class="frame">
-                    <h1>Hi, <span data-insert="name">Name</span>, it’s really great to meet you. Let’s get to know each other a little.</h1>
+                    <h1>Hi <span data-insert="name">Name</span>, it’s really great to meet you. Let’s get to know each other a little.</h1>
                 </div>
                 <div class="frame form-inline">
                     <h1>We live in Greenville, SC, USA. Where do you live?</h1>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="checkbox-wrap">
                     <input type="checkbox" name="why" value="landscape" id="landscape"/>
-                    <label for="landscape">To landscape is beautiful</label>
+                    <label for="landscape">The landscape is beautiful</label>
                 </div>
                 <div class="checkbox-wrap">
                     <input type="checkbox" name="why" value="nightlife" id="nightlife"/>
