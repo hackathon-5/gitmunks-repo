@@ -1,3 +1,4 @@
+<?php $this->set('body_class', 'register'); ?>r
 <form id="registration">
     <div class="form-group current">
         <p>Hi there, welcome to Trek. What’s your name?</p>

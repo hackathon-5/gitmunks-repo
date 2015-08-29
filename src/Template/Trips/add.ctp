@@ -1,3 +1,4 @@
+<?php $this->set('body_class', 'add'); ?>
 <form id="add">
     <div class="form-group current">
         <h3>Get recommendations for your trip</h3>
