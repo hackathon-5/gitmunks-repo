@@ -13,35 +13,35 @@
     </div>
     <div class="form-group">
         <p>When are you going?</p>
-        <input type="date" name="date" class="form-control" />
+        <input type="date" name="date" class="form-control tabbable" />
 
     </div>
     <div class="form-group">
         <p>Which travel experience best describes this trip?</p>
 
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="adventure" id="adventure" />
-        <label for="adventure">Adventure</label>
+            <input type="checkbox" name="travel_type" value="adventure" id="adventure" />
+            <label for="adventure">Adventure</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="relaxing" id="relaxing"/>
-        <label for="relaxing">Relaxing</label>
+            <input type="checkbox" name="travel_type" value="relaxing" id="relaxing"/>
+            <label for="relaxing">Relaxing</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="off-the-beaten-path" id="path"/>
-        <label for="path">Off the Beaten Path</label>
+            <input type="checkbox" name="travel_type" value="off-the-beaten-path" id="path"/>
+            <label for="path">Off the Beaten Path</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="special_events" id="special-events"/>
-        <label for="special-events">Special Events</label>
+            <input type="checkbox" name="travel_type" value="special_events" id="special-events"/>
+            <label for="special-events">Special Events</label>
         </div>
         <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="outdoors" id="outdoors"/>
-        <label for="outdoors">Outdoors</label>
+            <input type="checkbox" name="travel_type" value="outdoors" id="outdoors"/>
+            <label for="outdoors">Outdoors</label>
         </div>
-        <div class="checkbox-wrap">
-        <input type="checkbox" name="travel_type" value="family" id="family"/>
-        <label for="family">Family-Friendly</label>
+            <div class="checkbox-wrap">
+            <input type="checkbox" name="travel_type" value="family" id="family"/>
+            <label for="family">Family-Friendly</label>
         </div>
     </div>
     <div class="form-group">
@@ -51,7 +51,7 @@
     </div>
     <div class="form-group">
         <p>Super cool! I bet you will have a great trip. While you wait on some responses would you like to help some people coming to your area?</p>
-        <a href="/account/users/index" class="btn main-button">Help Some Peeps</a> |
+        <a href="/account/users/index" class="btn main-button">Help Some Peeps</a>
         <a href="/account/users/index" class="btn main-button">Go to My Account</a>
     </div>
 </form>
