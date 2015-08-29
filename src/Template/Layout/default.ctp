@@ -28,6 +28,7 @@ $cakeDescription = 'Sparc Hackathon \'15';
 
     <?= $this->AssetCompress->css('base.css') ?>
 
+    <?= $this->Html->script('components/jquery/dist/jquery'); ?>
     <?= $this->Html->script('main.js'); ?>
 
     <?= $this->fetch('meta') ?>
