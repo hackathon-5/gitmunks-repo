@@ -13,6 +13,7 @@ class UsersController extends \App\Controller\AppController{
      * or we show people they can help in their area
      */
     public function index(){
+        $this->loadModel('Trips');
         // TODO - Get users in their area they could help
         // TODO - Get questions they have outstanding
         $trips = $this->Trips->find();
