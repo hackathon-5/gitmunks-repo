@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <h1>Well we would like you to come back sometime, so can we get and email and password to remember you by?</h1>
+                <h1>Well we would like you to come back sometime, so can we get an email and password to remember you by?</h1>
                 <input type="email" name="username" placeholder="Email" class="form-control" />
                 <input type="password" name="password" placeholder="Password" class="form-control" />
             </div>
