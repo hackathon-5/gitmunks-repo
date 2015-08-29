@@ -15,9 +15,9 @@ class UsersController extends \App\Controller\AppController{
     public function index(){
         $this->loadModel('Trips');
 
-        $mytrips = $this->Trips->find('all')->where(['user_id'=>3])->contain(['Users', 'Comments']);
+        $mytrips = $this->Trips->find('all')->where(['user_id'=>$this->Auth->user('id')])->contain(['Users', 'Comments']);
 
-        $trips = $this->Trips->find('all')->where(['user_id !='=>3])->contain(['Users', 'Comments']);
+        $trips = $this->Trips->find('all')->where(['user_id !='=>$this->Auth->user('id')])->contain(['Users', 'Comments']);
 
         $this->set(compact('trips', 'mytrips'));
     }
