@@ -1,16 +1,4 @@
 <form id="add">
-
-
-
-
-
-
-    Get Recommendations >>
-
-    ------
-    Help someone else plan a trip
-
-    Goes to their home screen
     <div class="form-group current">
         <h3>Get recommendations for your trip</h3>
         <p>Alright, [name], where do you want to go?</p>
