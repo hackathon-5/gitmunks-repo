@@ -139,18 +139,21 @@ $(document).ready(function () {
         Form.init('#add');
     }
 
+    Menu.init();
     Rating.init();
-
-    var toggleProfile = $('header #profile');
-    var profileMenu = $('.profile-menu');
-
-    function toggleProfileMenu() {
-        profileMenu.slideToggle("fast");
-    }
-
-    toggleProfile.click(toggleProfileMenu);
-
+    
     $(".post .question").text(function(index, currentText) {
         return currentText.substr(0, 70)+'...';
     });
-})
+});
+
+Menu = {
+    toggleProfile: 'header #profile',
+    profileMenu: '.profile-menu',
+    init: function() {
+        $(this.toggleProfile).click(this.toggleMenu.bind(this));
+    },
+    toggleMenu: function(){
+        $(this.profileMenu).slideToggle("fast");
+    }
+}
