@@ -1,3 +1,5 @@
+@import "compass/css3/transform";
+
 // Colors
 $dk_grey: #29393E;
 $red: #FE5B5B;
@@ -14,3 +16,15 @@ header{height:60px;background:$dk_grey;text-align:center;
 }
 
 // account/users/index
+
+.hero{height:150px;background-size:cover;background-position:center;text-align:center;
+	h1{position:relative;top:50%;transform:translateY(-50%);color:white;margin:0;}
+}
+section.posts{
+	.post{position:relative;padding:15px 0;
+		.question{margin-left:10px;width:70%;display:inline-block;margin-bottom:0;}
+		svg{fill:$red;width:30px;height:30px;position:absolute;right:20px;top:20px;}
+		.answers{position: absolute;right: 28px;top: 23px;z-index: 2;}
+	}
+	.post:nth-child(even){background:#F5F5F5;}
+}
