@@ -1,5 +1,7 @@
 @import "variables.scss";
 
+// Header
+
 header{height:60px;background:$dk_grey;text-align:center;
 	svg{fill:#FE5B5B;width:30px;height:30px;}
 	a{display:inline-block;}
@@ -8,3 +10,7 @@ header{height:60px;background:$dk_grey;text-align:center;
 	.profile{position:absolute;top:15px;right:15px;}
 	.hamburger{position:absolute;top:15px;left:15px;}
 }
+
+// account/users/index
+
+.hero
