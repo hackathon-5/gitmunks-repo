@@ -65,14 +65,29 @@ Form = {
         return $(this.current_el).prev(this.group_el);
     },
     transition: function (current, next){
-        $(current).removeClass('current')
-        $(next).addClass('current');
-        this.update_nav();
-        $(current).fadeOut(400, function (el) {
-            $(next).fadeIn(500, function (el) {
-                $('input:first-of-type').focus();
-            }.bind(this));
-        }.bind(this))
+        if(this.is_valid(current)) {
+            $(current).removeClass('current')
+            $(next).addClass('current');
+            this.update_nav();
+            $(current).fadeOut(400, function (el) {
+                $(next).fadeIn(500, function (el) {
+                    $('input:first-of-type').focus();
+                }.bind(this));
+            }.bind(this))
+        }
+    },
+    is_valid: function (current) {
+        error = false;
+        $(current).find('input').each(function (i, el){
+            if($(el).val() == ''){
+                alert('Please enter a value for '+$(el).attr('name'));
+                error = true;
+            }
+        });
+        if(error) {
+            return false;
+        }
+        return true;
     },
     update_nav: function () {
         show = [];
