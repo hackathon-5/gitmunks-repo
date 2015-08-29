@@ -32,5 +32,11 @@ header{height:60px;background:$dk_grey;text-align:center;
 }
 
 .trip{
+	.trip-user{width:90%;margin:20px auto;}
+	.dates{margin-bottom:0;}
 	.name{color:$red;}
+	.comment .name{margin-bottom:0;}
+	.comment .text{background:#F5F5F5;}
+	.user{width:90%;margin:20px auto;}
+	.text-inner{width:90%;margin:20px auto;padding:20px 0;}
 }
