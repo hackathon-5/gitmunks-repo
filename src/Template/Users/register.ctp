@@ -108,7 +108,7 @@
                 <input type="password" name="password" placeholder="Password" class="form-control" />
             </div>
             <div class="form-group">
-                <h1>Alright! Push the button and expierience Trek. Oh and we'll save your data too.</h1>
+                <h1>Alright! Push the button and experience Trek. Oh and we'll save your data too.</h1>
                 <a data-url="/users/register" class="next complete btn main-button">Start Trekking!</a>
             </div>
             <div class="form-group">

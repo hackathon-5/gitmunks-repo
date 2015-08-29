@@ -40,3 +40,7 @@
 	}
 	.container{width:100%;}
 }
+
+.register .forms-container .forms-content{
+	@include bp(tablet){ max-width:400px; margin:0 auto;}
+}
