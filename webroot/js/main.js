@@ -1,13 +1,21 @@
 Form = {
     form: null,
+    form_array: {},
     next_el: '.next',
     back_el: '.back',
     current_el: '.current',
     group_el: '.form-group',
     init: function (form) {
         this.form = $(form);
+        $(this.back_el+','+this.next_el).click(this.save.bind(this));
         $(this.back_el).click(this.back.bind(this));
         $(this.next_el).click(this.next.bind(this));
+    },
+    save: function () {
+        data = this.form.serializeArray();
+        _.each(data, function(field){
+            this.form_array[field['name']] = field.value;
+        }.bind(this));
     },
     back: function (e){
         var current = this.get_current_group();
