@@ -1,17 +1,19 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Trip;
+use App\Model\Entity\Comment;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Trips Model
+ * Comments Model
  *
+ * @property \Cake\ORM\Association\BelongsTo $Users
+ * @property \Cake\ORM\Association\BelongsTo $Trips
  */
-class TripsTable extends Table
+class CommentsTable extends Table
 {
 
     /**
@@ -24,15 +26,18 @@ class TripsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('trips');
+        $this->table('comments');
         $this->displayField('id');
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('User');
-        $this->hasMany('Comments');
-
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->belongsTo('Trips', [
+            'foreignKey' => 'trip_id'
+        ]);
     }
 
     /**
@@ -48,21 +53,22 @@ class TripsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->allowEmpty('city');
-
-        $validator
-            ->allowEmpty('state');
-
-        $validator
-            ->allowEmpty('country');
-
-        $validator
-            ->add('date', 'valid', ['rule' => 'date'])
-            ->allowEmpty('date');
-
-        $validator
-            ->allowEmpty('description');
+            ->allowEmpty('comment');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
+        $rules->add($rules->existsIn(['trip_id'], 'Trips'));
+        return $rules;
     }
 }
