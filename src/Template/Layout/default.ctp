@@ -50,6 +50,13 @@ $cakeDescription = 'Sparc Hackathon \'15';
         <a href="#" id="profile">
             <svg class="profile"><use xlink:href="#profile"></use></svg>
         </a>
+        <div class="profile-menu">
+            <ul>
+                <li><a href="/account/users/index">My Questions</a></li>
+                <li><a href="/trips/add">+Add a Trip</a></li>
+                <li><a href="/">Log Out</a></li>
+            </ul>
+        </div>
     </header>
     <div id="container" class="container">
 

@@ -3,7 +3,7 @@
     <h1>Greenville, SC</h1>
 </div>
 <section class="posts">
-    <h3>My Trip Questions</h3>
+    <h1>My Trip Questions</h1>
     <?php foreach($mytrips as $trip): ?>
         <div class="post <?= count($trip->comments) > 0? 'answer':''; ?>">
             <a href="/trips/view/<?= $trip->id; ?>">
@@ -15,7 +15,7 @@
             </a>
         </div>
     <?php endforeach; ?>
-    <h3>People who need your help.</h3>
+    <h1>People who need your help.</h1>
     <?php foreach($trips as $trip): ?>
     <div class="post <?= count($trip->comments) > 0? 'answer':''; ?>">
         <a href="/trips/view/<?= $trip->id; ?>">
