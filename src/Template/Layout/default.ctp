@@ -38,12 +38,19 @@ $cakeDescription = 'Sparc Hackathon \'15';
     <?= $this->fetch('script') ?>
 </head>
 <body>
+    <?php include_once('svg-defs.svg'); ?>
     <header>
-        <div class="header-title">
+        <a href="#" id="hamburger">
+            <svg class="hamburger"><use xlink:href="#hamburger"></use></svg>
+        </a>
+        <div class="header-logo">
             <img src="/img/trek-logo.svg" height="40px" alt="trek logo">
         </div>
+        <a href="#" id="profile">
+            <svg class="profile"><use xlink:href="#profile"></use></svg>
+        </a>
     </header>
-    <div id="container">
+    <div id="container" class="container">
 
         <div id="content">
             <?= $this->Flash->render() ?>
