@@ -113,4 +113,8 @@ $(document).ready(function () {
     }
 
     toggleProfile.click(toggleProfileMenu);
+
+    $(".post .question").text(function(index, currentText) {
+        return currentText.substr(0, 70)+'...';
+    });
 })
