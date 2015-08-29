@@ -53,4 +53,6 @@ header{height:60px;background:$dk_grey;text-align:center;
 	.text-inner{width:90%;margin:0px 20px;padding:20px 0 5px;font-family:'Open Sans', serif;font-size:14px;line-height:20px;}
 }
 
-#add_comment{width: 90%;margin: 0 auto;padding-top: 15px;border-top: 1px solid #e5e5e5}
+#add_comment{width: 90%;margin: 0 auto;padding-top: 15px;border-top: 1px solid #e5e5e5;
+	.submit-response{margin-bottom:15px;width:100%;background-color:#fe6e6e;}
+}
