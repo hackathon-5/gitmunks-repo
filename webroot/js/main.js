@@ -169,9 +169,9 @@ Scroll = {
     scrolled: function(){
         this.scroll = $(window).scrollTop();
         if (this.scroll > 0){
-           $('header').slideUp('fast'); 
+           $('header').fadeOut('fast'); 
         } else if(this.scroll === 0) {
-            $('header').slideDown('fast'); 
+            $('header').fadeIn('fast'); 
         }
     }
 }

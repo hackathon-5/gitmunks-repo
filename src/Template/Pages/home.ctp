@@ -8,11 +8,18 @@
 	</div>
 </div>
 <div class="extra-content first">
-	<h1>Life's too short to spend all your time on the touristy hoopla.</h1>
+	<h1>"With Trek, I could've made it to India!"<br><br>
+	-- Christopher Columbus</h1>
 </div>
-<div class="extra-content second">
-	<h1>Life's too short to spend all your time on the touristy hoopla.</h1>
+<div class="extra-content">
+	<h1>"Thanks to Trek, I am thirsty again."<br><br>
+	-- Dos Equis Guy</h1>
 </div>
 <div class="extra-content third">
-	<h1>Life's too short to spend all your time on the touristy hoopla.</h1>
+	<h1>"AirBnb, Ima' let you finish, but Trek had the best app of all time!"<br><br>
+	-- Kanye West</h1>
+</div>
+<div class="extra-content">
+	<h1>"What Apple Maps should've been"<br><br>
+	-- Steve Jobs</h1>
 </div>
