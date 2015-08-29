@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'Sparc Hackathon \'15';
+$cakeDescription = 'Trek - Travel like you live there';
 ?>
 <!DOCTYPE html>
 <html>
