@@ -8,6 +8,8 @@ use Cake\View\Exception\MissingTemplateException;
 
 class UsersController extends AppController{
     public function register(){
-
+        if($this->request->is('post')){
+            $post = 'post';
+        }
     }
 }
