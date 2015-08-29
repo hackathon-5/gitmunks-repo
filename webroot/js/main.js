@@ -81,4 +81,13 @@ $(document).ready(function () {
     }else if($('#add').is('*')){
         Form.init('#add');
     }
+
+    var toggleProfile = $('header #profile');
+    var profileMenu = $('.profile-menu');
+
+    function toggleProfileMenu() {
+        profileMenu.slideToggle("fast");
+    }
+
+    toggleProfile.click(toggleProfileMenu);
 })

@@ -15,6 +15,12 @@ header{height:60px;background:$dk_grey;text-align:center;
 	.hamburger{position:absolute;top:15px;left:15px;}
 }
 
+.profile-menu{display:none;z-index: 200;background: $dk_grey;width: auto;position: absolute;top: 60px;right: 0px;padding: 45px;text-align: left;
+	a{font-family:'Open Sans', serif; color: white; }
+	ul{list-style-type:none;padding-left:0px;}
+	li{margin-bottom:15px;}
+}
+
 // account/users/index
 .user-index, .trip{
 	.container{width:100%;}
@@ -22,10 +28,11 @@ header{height:60px;background:$dk_grey;text-align:center;
 		h1{position:relative;top:50%;transform:translateY(-50%);color:white;margin:0;}
 	}
 	section.posts{
+		h1{color:#29393e;padding-left:8px;}
 		.post{position:relative;padding:15px 0;height:70px;
-			.question{margin-left:10px;width:70%;display:inline-block;margin-bottom:0;}
+			.question{margin-left:10px;width:70%;display:inline-block;margin-bottom:0;position: relative;top: 50%;transform: translateY(-50%);}
 			svg{fill:$red;width:30px;height:30px;position:absolute;right:20px;top:20px;}
-			.answers{position: absolute;right: 28px;top: 23px;z-index: 2;}
+			.answers{position: absolute;right: 31px;top: 23px;z-index: 2;color:white;}
 		}
 		.post:nth-child(even){background:#F5F5F5;}
 	}
